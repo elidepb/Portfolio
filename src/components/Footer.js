@@ -13,8 +13,17 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>{t("footer.developedBy")}</h3>
+        <Col md="4" className="footer-body">
+          <h3>{t("footer.developedBy")}
+            <a
+              href="https://www.flaticon.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="#fff"
+            >
+              Flaticon
+            </a>
+          </h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>{t("footer.copyright", { year })}</h3>
