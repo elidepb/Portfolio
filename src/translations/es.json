@@ -13,18 +13,17 @@
   "home2": {
     "title": "PERMÍTEME PRESENTARME",
     "introduction": "Me enamoré de la programación y al menos he aprendido algo, creo... 🤷‍♂️",
-    "body": "Hablo con fluidez clásicos como C++, Javascript y Python. Mis campos de interés son la creación de nuevas tecnologías y productos web, y también áreas relacionadas con el aprendizaje profundo y el procesamiento del lenguaje natural. También aplico mi pasión por desarrollar productos con Node.js y bibliotecas y marcos de JavaScript modernos como React.js y Next.js",
-    "connect": "ENCUENTRAME EN",
+    "connect": "ENCUÉNTRAME EN",
     "connect_cta": "No dudes en conectarte conmigo"
   },
   "about": {
     "title": "Acerca de Mí",
-    "nameAndFrom": "Elide Portocarrero, desarrollador de software desde Perú.",
+    "nameAndFrom": "Hola a todos, soy Elide Portocarrero, desarrollador de software desde Perú.",
     "studies": "Como Ingeniero de Software, me apasiona crear soluciones tecnológicas innovadoras y eficientes.",
     "activities": "Además de la programación, disfruto de diversas actividades:",
-    "activity1": "Jugar Videojuegos",
+    "activity1": "Jugar Ajedrez",
     "activity2": "Escribir Blogs de Tecnología",
-    "activity3": "Viajar",
+    "activity3": "Leer",
     "quote": "¡Esfuérzate por construir cosas que marquen la diferencia!"
   },
   "projects": {
@@ -41,7 +40,7 @@
     }
   },
   "footer": {
-    "developedBy": "Diseñado y Desarrollado por Elide Portocarrero",
-    "copyright": "Copyright © {year} EP"
+    "developedBy": "Algunos iconos son de ",
+    "copyright": "Copyright © 2025 EP"
   }
 }

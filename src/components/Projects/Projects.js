@@ -3,7 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { useTranslation } from "react-i18next";
-import genericProjectImage from "../../Assets/Projects/generic.png"; // Placeholder image
+import genericProjectImage from "../../Assets/Projects/generic.png";
+import web from "../../Assets/web.png";
+import backend from "../../Assets/backend.png";
+import mobil from "../../Assets/mobil.png";
+import python from "../../Assets/python.png";
 
 function Projects() {
   const { t, ready } = useTranslation();
@@ -13,37 +17,37 @@ function Projects() {
       title: "Audio Transcription (Python)",
       description: t("projects.descriptions.audioTranscription", {defaultValue: "An AI-powered tool to convert speech from audio files into text with high accuracy using advanced models."}),
       ghLink: "https://github.com/elidepb/Audio-transcription-with-python",
-      imgPath: genericProjectImage,
+      imgPath: python,
     },
     {
       title: "Flutter Chess App",
       description: t("projects.descriptions.flutterChess", {defaultValue: "A classic game of chess reimagined as a sleek and responsive mobile application built with Flutter framework."}),
       ghLink: "https://github.com/elidepb/AJEDREX",
-      imgPath: genericProjectImage,
+      imgPath: mobil,
     },
     {
       title: "MCMC Methods (Python/R)",
       description: t("projects.descriptions.mcmc", {defaultValue: "Implementation of MCMC algorithms for Bayesian inference, demonstrating complex statistical modeling techniques."}),
       ghLink: "https://github.com/elidepb/Markov-Chain-Monte-Carlo-Method-MCMC-using-Python-and-R",
-      imgPath: genericProjectImage,
+      imgPath: python,
     },
     {
       title: "Multi-Language Translator",
       description: t("projects.descriptions.translator", {defaultValue: "A versatile Python tool for translating text and documents between multiple languages seamlessly and efficiently."}),
       ghLink: "https://github.com/elidepb/-Multi-Language-Translator-File-Processor",
-      imgPath: genericProjectImage,
+      imgPath: python,
     },
     {
       title: "Monster Rolodex (React)",
       description: t("projects.descriptions.monsterRolodex", {defaultValue: "A fun and interactive React application displaying a filterable list of 'monsters' fetched from an API."}),
       ghLink: "https://github.com/elidepb/MONSTER-ROLODEX-REACT",
-      imgPath: genericProjectImage,
+      imgPath: web,
     },
      {
       title: "GLB Model Generator",
       description: t("projects.descriptions.glbGenerator", {defaultValue: "A Python script to convert OBJ 3D models and their textures into the efficient GLB file format for web use."}),
       ghLink: "https://github.com/elidepb/GLB_GENERATOR",
-      imgPath: genericProjectImage,
+      imgPath: python,
     },
   ];
 

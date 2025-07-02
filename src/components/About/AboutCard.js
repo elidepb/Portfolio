@@ -10,25 +10,14 @@ function AboutCard() {
     return null;
   }
 
-  const nameAndFrom = t("about.nameAndFrom") || ""; // "Elide Portocarrero, desarrollador de software desde Perú."
-
-  // Extraer el nombre (Elide Portocarrero)
-  const name = nameAndFrom.split(",")[0].trim();
-
-  // Extraer la descripción y ubicación (desarrollador de software desde Perú.)
-  const descriptionAndLocation = nameAndFrom.substring(name.length + 1).trim(); // Quita la coma y el espacio
-
-  // Separar la descripción de la ubicación
-  const parts = descriptionAndLocation.split("desde");
-  const description = parts[0].trim();
-  const location = parts.length > 1 ? parts[1].trim().replace(".", "") : "";
+  const nameAndFrom = t("about.nameAndFrom") || "";
 
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hola, soy <span className="purple">{name}</span>, {description} desde <span className="purple">{location}.</span>
+            <span className="purple">{nameAndFrom}</span>
             <br />
             {t("about.studies")}
             <br />

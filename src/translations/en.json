@@ -19,12 +19,12 @@
   },
   "about": {
     "title": "Know Who I'M",
-    "nameAndFrom": "Hi Everyone, I am Elide Portocarrero from Peru.",
-    "studies": "I am a Software Engineer.",
+    "nameAndFrom": "Hello everyone, I'm Elide Portocarrero, a software developer from Peru.",
+    "studies": "As a Software Engineer, I am passionate about creating innovative and efficient technological solutions.",
     "activities": "Apart from coding, some other activities that I love to do!",
-    "activity1": "Playing Games",
+    "activity1": "Playing Chess",
     "activity2": "Writing Tech Blogs",
-    "activity3": "Travelling",
+    "activity3": "Read",
     "quote": "Strive to build things that make a difference!"
   },
   "projects": {
@@ -41,7 +41,7 @@
     }
   },
   "footer": {
-    "developedBy": "Designed and Developed by Elide Portocarrero",
-    "copyright": "Copyright © {year} EP"
+    "developedBy": "Some icons are from ",
+    "copyright": "Copyright © 2025 EP"
   }
 }
