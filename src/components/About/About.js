@@ -6,8 +6,10 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t, ready } = useTranslation();
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -22,7 +24,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              {ready ? t("about.title").split(" I'M")[0] : ""}{ready && t("about.title").includes("I'M") && <strong className="purple">{t("about.title").split(" I'M")[1].trim().split(" ")[0]}</strong>}
             </h1>
             <Aboutcard />
           </Col>

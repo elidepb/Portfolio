@@ -2,91 +2,75 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import { useTranslation } from "react-i18next";
+import genericProjectImage from "../../Assets/Projects/generic.png"; // Placeholder image
 
 function Projects() {
+  const { t, ready } = useTranslation();
+
+  const userProjects = [
+    {
+      title: "Audio Transcription (Python)",
+      description: t("projects.descriptions.audioTranscription", {defaultValue: "An AI-powered tool to convert speech from audio files into text with high accuracy using advanced models."}),
+      ghLink: "https://github.com/elidepb/Audio-transcription-with-python",
+      imgPath: genericProjectImage,
+    },
+    {
+      title: "Flutter Chess App",
+      description: t("projects.descriptions.flutterChess", {defaultValue: "A classic game of chess reimagined as a sleek and responsive mobile application built with Flutter framework."}),
+      ghLink: "https://github.com/elidepb/AJEDREX",
+      imgPath: genericProjectImage,
+    },
+    {
+      title: "MCMC Methods (Python/R)",
+      description: t("projects.descriptions.mcmc", {defaultValue: "Implementation of MCMC algorithms for Bayesian inference, demonstrating complex statistical modeling techniques."}),
+      ghLink: "https://github.com/elidepb/Markov-Chain-Monte-Carlo-Method-MCMC-using-Python-and-R",
+      imgPath: genericProjectImage,
+    },
+    {
+      title: "Multi-Language Translator",
+      description: t("projects.descriptions.translator", {defaultValue: "A versatile Python tool for translating text and documents between multiple languages seamlessly and efficiently."}),
+      ghLink: "https://github.com/elidepb/-Multi-Language-Translator-File-Processor",
+      imgPath: genericProjectImage,
+    },
+    {
+      title: "Monster Rolodex (React)",
+      description: t("projects.descriptions.monsterRolodex", {defaultValue: "A fun and interactive React application displaying a filterable list of 'monsters' fetched from an API."}),
+      ghLink: "https://github.com/elidepb/MONSTER-ROLODEX-REACT",
+      imgPath: genericProjectImage,
+    },
+     {
+      title: "GLB Model Generator",
+      description: t("projects.descriptions.glbGenerator", {defaultValue: "A Python script to convert OBJ 3D models and their textures into the efficient GLB file format for web use."}),
+      ghLink: "https://github.com/elidepb/GLB_GENERATOR",
+      imgPath: genericProjectImage,
+    },
+  ];
+
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          {ready ? t("projects.title").split(" ")[0] : ""} {ready ? t("projects.title").split(" ")[1] : ""} {ready && t("projects.title").split(" ").length > 2 && <strong className="purple">{t("projects.title").split(" ")[2]}</strong>} {ready ? t("projects.title").split(" ").slice(3).join(" ") : ""}
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          {t("projects.subtitle")}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          {userProjects.map((project, index) => (
+            <Col md={4} className="project-card" key={index}>
+              <ProjectCard
+                imgPath={project.imgPath || genericProjectImage}
+                isBlog={false}
+                title={project.title}
+                description={project.description}
+                ghLink={project.ghLink}
+                demoLink={project.demoLink}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "language": "Language"
+  },
+  "home": {
+    "greeting": "Hi There!",
+    "name": "I'M Elide Portocarrero",
+    "role": "Software Developer"
+  },
+  "home2": {
+    "title": "LET ME INTRODUCE MYSELF",
+    "introduction": "I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️",
+    "body": "I am fluent in classics like C++, Javascript and Python. My field of Interest's are building new Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing. I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks like React.js and Next.js",
+    "connect": "FIND ME ON",
+    "connect_cta": "Feel free to connect with me"
+  },
+  "about": {
+    "title": "Know Who I'M",
+    "nameAndFrom": "Hi Everyone, I am Elide Portocarrero from Peru.",
+    "studies": "I am a Software Engineer.",
+    "activities": "Apart from coding, some other activities that I love to do!",
+    "activity1": "Playing Games",
+    "activity2": "Writing Tech Blogs",
+    "activity3": "Travelling",
+    "quote": "Strive to build things that make a difference!"
+  },
+  "projects": {
+    "title": "My Recent Works",
+    "subtitle": "Here are a few projects I've worked on recently.",
+    "ghLink": "GitHub Link",
+    "descriptions": {
+      "audioTranscription": "An AI-powered tool to convert speech from audio files into text with high accuracy using advanced models.",
+      "flutterChess": "A classic game of chess reimagined as a sleek and responsive mobile application built with Flutter framework.",
+      "mcmc": "Implementation of MCMC algorithms for Bayesian inference, demonstrating complex statistical modeling techniques.",
+      "translator": "A versatile Python tool for translating text and documents between multiple languages seamlessly and efficiently.",
+      "monsterRolodex": "A fun and interactive React application displaying a filterable list of 'monsters' fetched from an API.",
+      "glbGenerator": "A Python script to convert OBJ 3D models and their textures into the efficient GLB file format for web use."
+    }
+  },
+  "footer": {
+    "developedBy": "Designed and Developed by Elide Portocarrero",
+    "copyright": "Copyright © {year} EP"
+  }
+}
