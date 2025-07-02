@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "language": "Idioma"
+  },
+  "home": {
+    "greeting": "¡Hola!",
+    "name": "SOY Elide Portocarrero",
+    "role": "Desarrollador de Software"
+  },
+  "home2": {
+    "title": "PERMÍTEME PRESENTARME",
+    "introduction": "Me enamoré de la programación y al menos he aprendido algo, creo... 🤷‍♂️",
+    "body": "Hablo con fluidez clásicos como C++, Javascript y Python. Mis campos de interés son la creación de nuevas tecnologías y productos web, y también áreas relacionadas con el aprendizaje profundo y el procesamiento del lenguaje natural. También aplico mi pasión por desarrollar productos con Node.js y bibliotecas y marcos de JavaScript modernos como React.js y Next.js",
+    "connect": "ENCUENTRAME EN",
+    "connect_cta": "No dudes en conectarte conmigo"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "nameAndFrom": "Elide Portocarrero, desarrollador de software desde Perú.",
+    "studies": "Como Ingeniero de Software, me apasiona crear soluciones tecnológicas innovadoras y eficientes.",
+    "activities": "Además de la programación, disfruto de diversas actividades:",
+    "activity1": "Jugar Videojuegos",
+    "activity2": "Escribir Blogs de Tecnología",
+    "activity3": "Viajar",
+    "quote": "¡Esfuérzate por construir cosas que marquen la diferencia!"
+  },
+  "projects": {
+    "title": "Mis Trabajos Recientes",
+    "subtitle": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+    "ghLink": "Enlace de GitHub",
+    "descriptions": {
+      "audioTranscription": "Herramienta con IA para convertir voz de archivos de audio a texto con alta precisión usando modelos avanzados.",
+      "flutterChess": "El clásico juego de ajedrez reimaginado como una elegante aplicación móvil responsiva construida con Flutter.",
+      "mcmc": "Implementación de algoritmos MCMC para inferencia Bayesiana, demostrando técnicas complejas de modelado estadístico.",
+      "translator": "Versátil herramienta en Python para traducir texto y documentos entre múltiples idiomas de forma fluida y eficiente.",
+      "monsterRolodex": "Aplicación React divertida e interactiva que muestra una lista filtrable de 'monstruos' obtenida de una API.",
+      "glbGenerator": "Script de Python para convertir modelos 3D OBJ y sus texturas al eficiente formato GLB para uso web."
+    }
+  },
+  "footer": {
+    "developedBy": "Diseñado y Desarrollado por Elide Portocarrero",
+    "copyright": "Copyright © {year} EP"
+  }
+}
